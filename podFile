@@ -1,0 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'LWModuleDemo' do
+  pod 'MLSOAppDelegate', '~> 0.0.1'
+  pod "BeeHive", '1.0.0'
+end
