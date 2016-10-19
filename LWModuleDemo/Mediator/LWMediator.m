@@ -53,8 +53,8 @@ static NSString *const APP_SCHEME = @"AloesLu";
         return nil;
     }
     
-//    执行交互操作
-    id rs = [self performSelector:NSSelectorFromString(actionName) withObjects:params failure:^{
+//    执行交互操作，不应该持有该返回对象（__weak修饰，当id所引用的对象被废弃，则赋值id为nil）
+    __weak id rs = [self performSelector:NSSelectorFromString(actionName) withObjects:params failure:^{
         NSLog(@"LWMediator 所有Category中不存在 %@ 方法",actionName);
     }];
     return rs;
@@ -133,8 +133,8 @@ static NSString *const APP_SCHEME = @"AloesLu";
 //    调用执行方法
     [invocation invoke];
     
-//    获取返回值，有返回值类型，才去获得返回值
-    id returnValue = nil;
+//    获取返回值，有返回值类型，才去获得返回值，不应该持有该返回对象（__weak修饰，当id所引用的对象被废弃，则赋值id为nil）
+    __weak id returnValue = nil;
     if (signature.methodReturnLength) {
         [invocation getReturnValue:&returnValue];
     }
