@@ -9,13 +9,14 @@
 #import "ViewController.h"
 #import "LWMediator+ModuleA.h"
 #import "LWMediator+ModuleB.h"
+#import <BeeHive/BeeHive.h>
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
+BH_EXPORT_MODULE()
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIButton *buttonA=[[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
@@ -35,12 +36,12 @@
 }
 
 - (void)buttonAAction:(id)sender{
-//    UIViewController *vc=[LWMediator protocolGoToModuleA:@"AAAAAA"];
-//    [self.navigationController pushViewController:vc animated:YES];
+    UIViewController *vc=[LWMediator protocolGoToModuleA:@"AAAAAA"];
+    [self.navigationController pushViewController:vc animated:YES];
     
-    NSString *urlStr = @"AloesLu://ModuleA/urlGoToModuleA:?moduleAName=111111";
-    NSURL *url = [NSURL URLWithString:urlStr];
-    [LWMediator performActionWithUrl:url callBack:NULL];
+//    NSString *urlStr = @"AloesLu://ModuleA/urlGoToModuleA:?moduleAName=111111";
+//    NSURL *url = [NSURL URLWithString:urlStr];
+//    [LWMediator performActionWithUrl:url callBack:NULL];
 }
 
 - (void)buttonBAction:(id)sender{

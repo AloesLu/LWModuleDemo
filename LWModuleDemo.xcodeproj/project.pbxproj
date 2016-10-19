@@ -21,6 +21,9 @@
 		69D8BCB91DB60B4B002C6D77 /* ModuleB1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D8BCB71DB60B4B002C6D77 /* ModuleB1ViewController.m */; };
 		69D8BCBA1DB60B4B002C6D77 /* ModuleB1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D8BCB81DB60B4B002C6D77 /* ModuleB1ViewController.xib */; };
 		69D8BCBF1DB611FD002C6D77 /* LWMediator+ModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D8BCBE1DB611FD002C6D77 /* LWMediator+ModuleB.m */; };
+		69D8BCC31DB759A7002C6D77 /* LWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D8BCC21DB759A7002C6D77 /* LWAppDelegate.m */; };
+		69D8BCC61DB75C77002C6D77 /* LWNotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D8BCC51DB75C77002C6D77 /* LWNotificationService.m */; };
+		69D8BCC91DB76483002C6D77 /* LWRootViewService.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D8BCC81DB76483002C6D77 /* LWRootViewService.m */; };
 		E83892AECBCCB5B7445594C3 /* libPods-LWModuleDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E5BA24D42D809DAB3EA1C2 /* libPods-LWModuleDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,12 @@
 		69D8BCBC1DB60B8D002C6D77 /* ModuleB1ViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleB1ViewControllerProtocol.h; sourceTree = "<group>"; };
 		69D8BCBD1DB611FD002C6D77 /* LWMediator+ModuleB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LWMediator+ModuleB.h"; sourceTree = "<group>"; };
 		69D8BCBE1DB611FD002C6D77 /* LWMediator+ModuleB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LWMediator+ModuleB.m"; sourceTree = "<group>"; };
+		69D8BCC11DB759A7002C6D77 /* LWAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWAppDelegate.h; sourceTree = "<group>"; };
+		69D8BCC21DB759A7002C6D77 /* LWAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWAppDelegate.m; sourceTree = "<group>"; };
+		69D8BCC41DB75C77002C6D77 /* LWNotificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWNotificationService.h; sourceTree = "<group>"; };
+		69D8BCC51DB75C77002C6D77 /* LWNotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWNotificationService.m; sourceTree = "<group>"; };
+		69D8BCC71DB76483002C6D77 /* LWRootViewService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWRootViewService.h; sourceTree = "<group>"; };
+		69D8BCC81DB76483002C6D77 /* LWRootViewService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWRootViewService.m; sourceTree = "<group>"; };
 		7AD1CD904525AC0038987ED5 /* Pods-LWModuleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWModuleDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWModuleDemo/Pods-LWModuleDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E68970C6D5C487AAC8C7D096 /* Pods-LWModuleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWModuleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWModuleDemo/Pods-LWModuleDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +109,7 @@
 				6926A0281DB5F121006E20B2 /* Mediator */,
 				6926A02B1DB5F121006E20B2 /* Module */,
 				6926A02C1DB5F121006E20B2 /* Protocol */,
+				69D8BCC01DB7595F002C6D77 /* AppDelegate Service */,
 				6926A0111DB5BC6F006E20B2 /* AppDelegate.h */,
 				6926A0121DB5BC6F006E20B2 /* AppDelegate.m */,
 				6926A0141DB5BC6F006E20B2 /* ViewController.h */,
@@ -196,6 +206,19 @@
 				69D8BCBC1DB60B8D002C6D77 /* ModuleB1ViewControllerProtocol.h */,
 			);
 			path = ModuleB;
+			sourceTree = "<group>";
+		};
+		69D8BCC01DB7595F002C6D77 /* AppDelegate Service */ = {
+			isa = PBXGroup;
+			children = (
+				69D8BCC11DB759A7002C6D77 /* LWAppDelegate.h */,
+				69D8BCC21DB759A7002C6D77 /* LWAppDelegate.m */,
+				69D8BCC41DB75C77002C6D77 /* LWNotificationService.h */,
+				69D8BCC51DB75C77002C6D77 /* LWNotificationService.m */,
+				69D8BCC71DB76483002C6D77 /* LWRootViewService.h */,
+				69D8BCC81DB76483002C6D77 /* LWRootViewService.m */,
+			);
+			path = "AppDelegate Service";
 			sourceTree = "<group>";
 		};
 		CDB3FEC6A7500F1B688CF611 /* Pods */ = {
@@ -318,12 +341,15 @@
 				69D8BCBF1DB611FD002C6D77 /* LWMediator+ModuleB.m in Sources */,
 				6926A0161DB5BC6F006E20B2 /* ViewController.m in Sources */,
 				69D8BCB01DB608B6002C6D77 /* LWMediator+ModuleA.m in Sources */,
+				69D8BCC31DB759A7002C6D77 /* LWAppDelegate.m in Sources */,
 				6926A0131DB5BC6F006E20B2 /* AppDelegate.m in Sources */,
 				69D8BCB91DB60B4B002C6D77 /* ModuleB1ViewController.m in Sources */,
 				6926A0101DB5BC6F006E20B2 /* main.m in Sources */,
 				6926A02D1DB5F121006E20B2 /* LWMediator.m in Sources */,
 				6926A0301DB5FD80006E20B2 /* LWProtocolManager.m in Sources */,
+				69D8BCC91DB76483002C6D77 /* LWRootViewService.m in Sources */,
 				69D8BCB41DB60B3C002C6D77 /* ModuleA1ViewController.m in Sources */,
+				69D8BCC61DB75C77002C6D77 /* LWNotificationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LWModuleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aloes.LWModuleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LWModuleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aloes.LWModuleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
